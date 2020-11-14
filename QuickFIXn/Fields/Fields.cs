@@ -963,6 +963,9 @@ namespace QuickFix.Fields
         public const char ACCEPTED_FOR_BIDDING = 'D';
         public const char PENDING_REPLACE = 'E';
         public const char REPLACED = '5';
+        public const char ORDER_UNPLACED = 'U';
+        public const char ORDER_INACTIVE = 'X';
+        public const char PRIVATE_ORDER = 'Z';
         public const char PENDING_CANCELREPLACE = '6';
     }
 
@@ -3009,6 +3012,7 @@ namespace QuickFix.Fields
         public const char TRADE_IN_A_CLEARING_HOLD = 'J';
         public const char TRADE_HAS_BEEN_RELEASED_TO_CLEARING = 'K';
         public const char TRIGGERED_OR_ACTIVATED_BY_SYSTEM = 'L';
+        public const char ORDER_UNPLACED = 'U';
         public const char PARTIAL_FILL = '1';
         public const char FILL = '2';
         public const char REPLACE = '5';
@@ -4523,6 +4527,19 @@ namespace QuickFix.Fields
         public const char RECOVERY_RATE_FOR_SHORT = 'a';
         public const char FIXING_PRICE = 'W';
         public const char CASH_RATE = 'X';
+        public const char OMX_OPEN_INTEREST = 'C';
+        public const char OMX_STATISTICS = 'a';
+        public const char OMX_NO_TRADES_EXIST = 'j';
+        public const char OMX_TOTAL_TRADES = 'n';
+        public const char OMX_OPENING_QUANTITY = 'o';
+        public const char OMX_UNADJ_PREVIOUS_CLOSE = 's';
+        public const char OMX_DELTA_REFERENCE_PRICE = 't';
+        public const char OMX_PREVIOUS_CLOSE = 'u';
+        public const char OMX_TOTAL_VALUE = 'v';
+        public const char OMX_TOTAL_VOLUME = 'w';
+        public const char OMX_REFERENCE_PRICE = 'x';
+        public const char OMX_52WEEK = 'y';
+        public const char OMX_INDICATIVE_OPENING = 'z';
     }
 
 
@@ -5901,6 +5918,39 @@ namespace QuickFix.Fields
         public const string AFTERNOON = "4";
         public const string EVENING = "5";
         public const string AFTER_HOURS = "6";
+        public const string Continuous = "Continuous";
+        public const string STARTLTECP = "STARTLTECP";
+        public const string NSE_PREOPEN = "NSE_PREOPEN";
+        public const string STARTOFDAY = "STARTOFDAY";
+        public const string NSE_PO_SESS = "NSE_PO_SESS";
+        public const string NSE_PREODBT = "NSE_PREODBT";
+        public const string NASD_PO_SESS = "NASD_PO_SESS";
+        public const string NASD_PREOPEN = "NASD_PREOPEN";
+        public const string NSE_PREOADJ = "NSE_PREOADJ";
+        public const string NSE_PREOADJD = "NSE_PREOADJD";
+        public const string NASD_BULK = "NASD_BULK";
+        public const string NSE_PA_SESS = "NSE_PA_SESS";
+        public const string NSE_TRADING = "NSE_TRADING";
+        public const string NSE_TRDDBT = "NSE_TRDDBT";
+        public const string NSE_MM_STRT = "NSE_MM_STRT";
+        public const string NASD_TRADING = "NASD_TRADING";
+        public const string NASD_TR_SESS = "NASD_TR_SESS";
+        public const string NSE_TR_SESS = "NSE_TR_SESS";
+        public const string START_INDEX = "START_INDEX";
+        public const string NSE_PRECLOSE = "NSE_PRECLOSE";
+        public const string NSE_PRECLSED = "NSE_PRECLSED";
+        public const string NSE_PCA_SESS = "NSE_PCA_SESS";
+        public const string NSE_PC_SESS = "NSE_PC_SESS";
+        public const string NSE_PRCL_ADD = "NSE_PRCL_ADD";
+        public const string NSE_PRCL_ADJ = "NSE_PRCL_ADJ";
+        public const string NSE_CLS_MCH = "NSE_CLS_MCH";
+        public const string NSE_MM_STP = "NSE_MM_STP";
+        public const string CLOSE_INDEX = "CLOSE_INDEX";
+        public const string NASD_CLOSE = "NASD_CLOSE";
+        public const string NSE_CLOSE = "NSE_CLOSE";
+        public const string ENDOFDAY = "ENDOFDAY";
+        public const string EOD_SESS = "EOD_SESS";
+        public const string STOPLTECP = "STOPLTECP";
     }
 
 
@@ -5980,6 +6030,9 @@ namespace QuickFix.Fields
         public const int PRE_OPEN = 4;
         public const int PRE_CLOSE = 5;
         public const int REQUEST_REJECTED = 6;
+        public const int PENDING = 100;
+        public const int TRIGGERED = 101;
+        public const int DELETED = 102;
         public const int PREOPEN = 4;
         public const int PRECLOSE = 5;
     }
@@ -7883,6 +7936,7 @@ namespace QuickFix.Fields
         public const string LETTER_OF_CREDIT = "L";
         public const string ISDA_FPML_PRODUCT_URL = "K";
         public const string MARKETPLACE_ASSIGNED_IDENTIFIER = "M";
+        public const string EXCHANGE_SYMBOL_NSE = "99";
         public const string CLEARING_HOUSE_CLEARING_ORGANIZATION = "H";
         public const string OPTIONS_PRICE_REPORTING_AUTHORITY = "J";
     }

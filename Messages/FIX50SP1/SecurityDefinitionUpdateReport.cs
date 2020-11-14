@@ -15,6 +15,68 @@ namespace QuickFix
             }
 
 
+            public QuickFix.Fields.AccruedInterestRate AccruedInterestRate
+            { 
+                get 
+                {
+                    QuickFix.Fields.AccruedInterestRate val = new QuickFix.Fields.AccruedInterestRate();
+                    GetField(val);
+                    return val;
+                }
+                set { SetField(value); }
+            }
+            
+            public void Set(QuickFix.Fields.AccruedInterestRate val) 
+            { 
+                this.AccruedInterestRate = val;
+            }
+            
+            public QuickFix.Fields.AccruedInterestRate Get(QuickFix.Fields.AccruedInterestRate val) 
+            { 
+                GetField(val);
+                return val;
+            }
+            
+            public bool IsSet(QuickFix.Fields.AccruedInterestRate val) 
+            { 
+                return IsSetAccruedInterestRate();
+            }
+            
+            public bool IsSetAccruedInterestRate() 
+            { 
+                return IsSetField(Tags.AccruedInterestRate);
+            }
+            public QuickFix.Fields.AccruedInterestAmt AccruedInterestAmt
+            { 
+                get 
+                {
+                    QuickFix.Fields.AccruedInterestAmt val = new QuickFix.Fields.AccruedInterestAmt();
+                    GetField(val);
+                    return val;
+                }
+                set { SetField(value); }
+            }
+            
+            public void Set(QuickFix.Fields.AccruedInterestAmt val) 
+            { 
+                this.AccruedInterestAmt = val;
+            }
+            
+            public QuickFix.Fields.AccruedInterestAmt Get(QuickFix.Fields.AccruedInterestAmt val) 
+            { 
+                GetField(val);
+                return val;
+            }
+            
+            public bool IsSet(QuickFix.Fields.AccruedInterestAmt val) 
+            { 
+                return IsSetAccruedInterestAmt();
+            }
+            
+            public bool IsSetAccruedInterestAmt() 
+            { 
+                return IsSetField(Tags.AccruedInterestAmt);
+            }
             public QuickFix.Fields.SecurityReportID SecurityReportID
             { 
                 get 

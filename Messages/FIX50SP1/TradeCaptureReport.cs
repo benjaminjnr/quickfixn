@@ -23,6 +23,37 @@ namespace QuickFix
                 this.LastPx = aLastPx;
             }
 
+            public QuickFix.Fields.MarketSegmentID MarketSegmentID
+            { 
+                get 
+                {
+                    QuickFix.Fields.MarketSegmentID val = new QuickFix.Fields.MarketSegmentID();
+                    GetField(val);
+                    return val;
+                }
+                set { SetField(value); }
+            }
+            
+            public void Set(QuickFix.Fields.MarketSegmentID val) 
+            { 
+                this.MarketSegmentID = val;
+            }
+            
+            public QuickFix.Fields.MarketSegmentID Get(QuickFix.Fields.MarketSegmentID val) 
+            { 
+                GetField(val);
+                return val;
+            }
+            
+            public bool IsSet(QuickFix.Fields.MarketSegmentID val) 
+            { 
+                return IsSetMarketSegmentID();
+            }
+            
+            public bool IsSetMarketSegmentID() 
+            { 
+                return IsSetField(Tags.MarketSegmentID);
+            }
             public QuickFix.Fields.TradeReportID TradeReportID
             { 
                 get 
