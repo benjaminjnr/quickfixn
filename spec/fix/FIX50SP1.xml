@@ -6884,9 +6884,7 @@
 			<value enum='4' description='AFTERNOON' />
 			<value enum='5' description='EVENING' />
 			<value enum='6' description='AFTER_HOURS' />
-
 			<value enum='Continuous' description='Continuous' />
-
 			<value enum='STARTLTECP' description='STARTLTECP' />
 			<value enum='NSE_PREOPEN' description='NSE_PREOPEN' />
 			<value enum='STARTOFDAY' description='STARTOFDAY' />
