@@ -2534,68 +2534,6 @@ namespace QuickFix
             { 
                 return IsSetField(Tags.FuturesValuationMethod);
             }
-            public QuickFix.Fields.UnderlyingSymbol UnderlyingSymbol
-            { 
-                get 
-                {
-                    QuickFix.Fields.UnderlyingSymbol val = new QuickFix.Fields.UnderlyingSymbol();
-                    GetField(val);
-                    return val;
-                }
-                set { SetField(value); }
-            }
-            
-            public void Set(QuickFix.Fields.UnderlyingSymbol val) 
-            { 
-                this.UnderlyingSymbol = val;
-            }
-            
-            public QuickFix.Fields.UnderlyingSymbol Get(QuickFix.Fields.UnderlyingSymbol val) 
-            { 
-                GetField(val);
-                return val;
-            }
-            
-            public bool IsSet(QuickFix.Fields.UnderlyingSymbol val) 
-            { 
-                return IsSetUnderlyingSymbol();
-            }
-            
-            public bool IsSetUnderlyingSymbol() 
-            { 
-                return IsSetField(Tags.UnderlyingSymbol);
-            }
-            public QuickFix.Fields.UnderlyingSymbolSfx UnderlyingSymbolSfx
-            { 
-                get 
-                {
-                    QuickFix.Fields.UnderlyingSymbolSfx val = new QuickFix.Fields.UnderlyingSymbolSfx();
-                    GetField(val);
-                    return val;
-                }
-                set { SetField(value); }
-            }
-            
-            public void Set(QuickFix.Fields.UnderlyingSymbolSfx val) 
-            { 
-                this.UnderlyingSymbolSfx = val;
-            }
-            
-            public QuickFix.Fields.UnderlyingSymbolSfx Get(QuickFix.Fields.UnderlyingSymbolSfx val) 
-            { 
-                GetField(val);
-                return val;
-            }
-            
-            public bool IsSet(QuickFix.Fields.UnderlyingSymbolSfx val) 
-            { 
-                return IsSetUnderlyingSymbolSfx();
-            }
-            
-            public bool IsSetUnderlyingSymbolSfx() 
-            { 
-                return IsSetField(Tags.UnderlyingSymbolSfx);
-            }
             public QuickFix.Fields.UnderlyingSecurityID UnderlyingSecurityID
             { 
                 get 

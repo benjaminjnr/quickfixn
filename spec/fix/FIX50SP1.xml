@@ -3899,8 +3899,6 @@
 			</group>
 		</component>
 		<component name='UnderlyingInstrument'>
-			<field name='UnderlyingSymbol' required='N' />
-			<field name='UnderlyingSymbolSfx' required='N' />
 			<field name='UnderlyingSecurityID' required='N' />
 			<field name='UnderlyingSecurityIDSource' required='N' />
 			<component name='UndSecAltIDGrp' required='N' />
@@ -6397,6 +6395,11 @@
 			<value enum='TRUE' description='TRUE_YIELD' />
 			<value enum='VALUE1_32' description='YIELD_VALUE_OF_1_32' />
 			<value enum='WORST' description='YIELD_TO_WORST' />
+			<value enum='CLOSE' description='NSE_CLOSE_YIELD' />
+			<value enum='HIGH' description='NSE_HIGH_YIELD' />
+			<value enum='LAST' description='NSE_LAST_YIELD' />
+			<value enum='LOW' description='NSE_LOW_YIELD' />
+			<value enum='WAVG' description='NSE_WAVG_YIELD' />
 		</field>
 		<field number='236' name='Yield' type='PERCENTAGE' />
 		<field number='237' name='TotalTakedown' type='AMT' />

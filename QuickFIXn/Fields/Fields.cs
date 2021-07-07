@@ -8421,6 +8421,11 @@ namespace QuickFix.Fields
         public const string TRUE_YIELD = "TRUE";
         public const string YIELD_VALUE_OF_1_32 = "VALUE1_32";
         public const string YIELD_TO_WORST = "WORST";
+        public const string NSE_CLOSE_YIELD = "CLOSE";
+        public const string NSE_HIGH_YIELD = "HIGH";
+        public const string NSE_LAST_YIELD = "LAST";
+        public const string NSE_LOW_YIELD = "LOW";
+        public const string NSE_WAVG_YIELD = "WAVG";
         public const string YIELD_TO_AVERAGE_MATURITY = "AVGMATURITY";
         public const string GOVERNMENT_EQUIVALENT_YIELD = "GOVTEQUIV";
         public const string YIELD_TO_AVERAGE_LIFE = "AVGLIFE";
