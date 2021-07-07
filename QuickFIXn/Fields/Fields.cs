@@ -4527,19 +4527,19 @@ namespace QuickFix.Fields
         public const char RECOVERY_RATE_FOR_SHORT = 'a';
         public const char FIXING_PRICE = 'W';
         public const char CASH_RATE = 'X';
-        public const char OMX_OPEN_INTEREST = 'C';
-        public const char OMX_STATISTICS = 'a';
-        public const char OMX_NO_TRADES_EXIST = 'j';
-        public const char OMX_TOTAL_TRADES = 'n';
-        public const char OMX_OPENING_QUANTITY = 'o';
-        public const char OMX_UNADJ_PREVIOUS_CLOSE = 's';
-        public const char OMX_DELTA_REFERENCE_PRICE = 't';
-        public const char OMX_PREVIOUS_CLOSE = 'u';
-        public const char OMX_TOTAL_VALUE = 'v';
-        public const char OMX_TOTAL_VOLUME = 'w';
-        public const char OMX_REFERENCE_PRICE = 'x';
-        public const char OMX_52WEEK = 'y';
-        public const char OMX_INDICATIVE_OPENING = 'z';
+        public const char NSE_STATISTICS = 'a';
+        public const char NSE_NO_TRADES_EXIST = 'j';
+        public const char NSE_TOTAL_TRADES = 'n';
+        public const char NSE_OPENING_QUANTITY = 'o';
+        public const char NSE_CLOSING_PRICE = 'p';
+        public const char NSE_UNADJ_PREVIOUS_CLOSE = 's';
+        public const char NSE_DELTA_REFERENCE_PRICE = 't';
+        public const char NSE_PREVIOUS_CLOSE = 'u';
+        public const char NSE_TOTAL_VALUE = 'v';
+        public const char NSE_TOTAL_VOLUME = 'w';
+        public const char NSE_REFERENCE_PRICE = 'x';
+        public const char NSE_52WEEK = 'y';
+        public const char NSE_INDICATIVE_OPENING = 'z';
     }
 
 
@@ -5115,6 +5115,22 @@ namespace QuickFix.Fields
         public const string CUSIP = "U";
         public const string LEAP_ROLLOVER = "V";
         public const string SUCCESSION_EVENT = "W";
+        public const string NSE_CUM_BONUS = "a";
+        public const string NSE_CUM_DEMERGE = "b";
+        public const string NSE_CUM_INTEREST = "c";
+        public const string NSE_CUM_LISTING = "d";
+        public const string NSE_CUM_RIGHT_OF_CONVERSION = "e";
+        public const string NSE_CALL_PAID = "f";
+        public const string NSE_CUM_DELISTING = "g";
+        public const string NSE_OFFER_CLOSING = "h";
+        public const string NSE_UNLISTED = "i";
+        public const string NSE_EX_BONUS = "j";
+        public const string NSE_EX_DEMERGE = "k";
+        public const string NSE_EX_LISTING = "l";
+        public const string NSE_EX_MERGE = "m";
+        public const string NSE_EX_RIGHT_OF_CONVERSION = "n";
+        public const string NSE_EX_SPLIT = "o";
+        public const string NSE_EX_DELISTING = "p";
         public const string EXDIVIDEND = "A";
         public const string EXDISTRIBUTION = "B";
         public const string EXRIGHTS = "C";
@@ -5918,39 +5934,6 @@ namespace QuickFix.Fields
         public const string AFTERNOON = "4";
         public const string EVENING = "5";
         public const string AFTER_HOURS = "6";
-        public const string Continuous = "Continuous";
-        public const string STARTLTECP = "STARTLTECP";
-        public const string NSE_PREOPEN = "NSE_PREOPEN";
-        public const string STARTOFDAY = "STARTOFDAY";
-        public const string NSE_PO_SESS = "NSE_PO_SESS";
-        public const string NSE_PREODBT = "NSE_PREODBT";
-        public const string NASD_PO_SESS = "NASD_PO_SESS";
-        public const string NASD_PREOPEN = "NASD_PREOPEN";
-        public const string NSE_PREOADJ = "NSE_PREOADJ";
-        public const string NSE_PREOADJD = "NSE_PREOADJD";
-        public const string NASD_BULK = "NASD_BULK";
-        public const string NSE_PA_SESS = "NSE_PA_SESS";
-        public const string NSE_TRADING = "NSE_TRADING";
-        public const string NSE_TRDDBT = "NSE_TRDDBT";
-        public const string NSE_MM_STRT = "NSE_MM_STRT";
-        public const string NASD_TRADING = "NASD_TRADING";
-        public const string NASD_TR_SESS = "NASD_TR_SESS";
-        public const string NSE_TR_SESS = "NSE_TR_SESS";
-        public const string START_INDEX = "START_INDEX";
-        public const string NSE_PRECLOSE = "NSE_PRECLOSE";
-        public const string NSE_PRECLSED = "NSE_PRECLSED";
-        public const string NSE_PCA_SESS = "NSE_PCA_SESS";
-        public const string NSE_PC_SESS = "NSE_PC_SESS";
-        public const string NSE_PRCL_ADD = "NSE_PRCL_ADD";
-        public const string NSE_PRCL_ADJ = "NSE_PRCL_ADJ";
-        public const string NSE_CLS_MCH = "NSE_CLS_MCH";
-        public const string NSE_MM_STP = "NSE_MM_STP";
-        public const string CLOSE_INDEX = "CLOSE_INDEX";
-        public const string NASD_CLOSE = "NASD_CLOSE";
-        public const string NSE_CLOSE = "NSE_CLOSE";
-        public const string ENDOFDAY = "ENDOFDAY";
-        public const string EOD_SESS = "EOD_SESS";
-        public const string STOPLTECP = "STOPLTECP";
     }
 
 
@@ -8421,7 +8404,6 @@ namespace QuickFix.Fields
         public const string TRUE_YIELD = "TRUE";
         public const string YIELD_VALUE_OF_1_32 = "VALUE1_32";
         public const string YIELD_TO_WORST = "WORST";
-        public const string NSE_CLOSE_YIELD = "CLOSE";
         public const string NSE_HIGH_YIELD = "HIGH";
         public const string NSE_LAST_YIELD = "LAST";
         public const string NSE_LOW_YIELD = "LOW";
@@ -11055,6 +11037,7 @@ namespace QuickFix.Fields
         public const int NOT_AUTHORIZED_TO_RETRIEVE_INSTRUMENT_DATA = 3;
         public const int INSTRUMENT_DATA_TEMPORARILY_UNAVAILABLE = 4;
         public const int REQUEST_FOR_INSTRUMENT_DATA_NOT_SUPPORTED = 5;
+        public const int INVALID_MARKETID = 100;
     }
 
 
@@ -24232,6 +24215,11 @@ namespace QuickFix.Fields
         public ListUpdateAction(char val)
             :base(Tags.ListUpdateAction, val) {}
 
+
+        // Field Enumerations
+        public const char ADD = 'A';
+        public const char DELETE = 'D';
+        public const char MODIFY = 'M';
     }
 
 
@@ -24277,6 +24265,11 @@ namespace QuickFix.Fields
         public TradSesUpdateAction(char val)
             :base(Tags.TradSesUpdateAction, val) {}
 
+
+        // Field Enumerations
+        public const char ADD = 'A';
+        public const char DELETE = 'D';
+        public const char MODIFY = 'M';
     }
 
 
@@ -24997,6 +24990,7 @@ namespace QuickFix.Fields
         public const int SUSPEND_ORDERS = 1;
         public const int RELEASE_ORDERS_FROM_SUSPENSION = 2;
         public const int CANCEL_ORDERS = 3;
+        public const int ORDER_STATUS = 100;
     }
 
 
