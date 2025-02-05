@@ -841,6 +841,7 @@ public sealed class MsgType : StringField
     public const string NETWORK_COUNTERPARTY_SYSTEM_STATUS_RESPONSE = "BD";
     public const string NEW_ORDER_D = "D";
     public const string NEW_ORDER_E = "E";
+    public const string XML_MESSAGE = "n";
     public const string NEW_ORDER_s = "s";
     public const string MARKET_DATA_W = "W";
     public const string MARKET_DATA_X = "X";
@@ -923,6 +924,9 @@ public sealed class OrdStatus : CharField
     public const char ACCEPTED_FOR_BIDDING = 'D';
     public const char PENDING_REPLACE = 'E';
     public const char REPLACED = '5';
+    public const char ORDER_UNPLACED = 'U';
+    public const char ORDER_INACTIVE = 'X';
+    public const char PRIVATE_ORDER = 'Z';
     public const char PENDING_CANCELREPLACE = '6';
 }
 
@@ -1234,6 +1238,7 @@ public sealed class Side : CharField
     public const char REDEEM = 'E';
     public const char LEND = 'F';
     public const char BORROW = 'G';
+    public const char CROSS_SHORT_EXXMPT = 'A';
 }
 
 
@@ -2864,6 +2869,7 @@ public sealed class ExecType : CharField
     public const char TRADE_IN_A_CLEARING_HOLD = 'J';
     public const char TRADE_HAS_BEEN_RELEASED_TO_CLEARING = 'K';
     public const char TRIGGERED_OR_ACTIVATED_BY_SYSTEM = 'L';
+    public const char ORDER_UNPLACED = 'U';
     public const char PARTIAL_FILL = '1';
     public const char FILL = '2';
     public const char REPLACE = '5';
@@ -4299,6 +4305,20 @@ public sealed class MDEntryType : CharField
     public const char RECOVERY_RATE_FOR_SHORT = 'a';
     public const char FIXING_PRICE = 'W';
     public const char CASH_RATE = 'X';
+    public const char NGX_OPEN_INTEREST = 'C';
+    public const char NGX_STATISTICS = 'a';
+    public const char NGX_NO_TRADES_EXIST = 'j';
+    public const char NGX_TOTAL_TRADES = 'n';
+    public const char NGX_OPENING_QUANTITY = 'o';
+    public const char NGX_CLOSING_PRICE = 'p';
+    public const char NGX_UNADJ_PREVIOUS_CLOSE = 's';
+    public const char NGX_DELTA_REFERENCE_PRICE = 't';
+    public const char NGX_PREVIOUS_CLOSE = 'u';
+    public const char NGX_TOTAL_VALUE = 'v';
+    public const char NGX_TOTAL_VOLUME = 'w';
+    public const char NGX_REFERENCE_PRICE = 'x';
+    public const char NGX_52WEEK = 'y';
+    public const char NGX_INDICATIVE_OPENING = 'z';
 }
 
 
@@ -4852,6 +4872,22 @@ public sealed class CorporateAction : StringField
     public const string CUSIP = "U";
     public const string LEAP_ROLLOVER = "V";
     public const string SUCCESSION_EVENT = "W";
+    public const string NGX_CUM_BONUS = "a";
+    public const string NGX_CUM_DEMERGE = "b";
+    public const string NGX_CUM_INTEREST = "c";
+    public const string NGX_CUM_LISTING = "d";
+    public const string NGX_CUM_RIGHT_OF_CONVERSION = "e";
+    public const string NGX_CALL_PAID = "f";
+    public const string NGX_CUM_DELISTING = "g";
+    public const string NGX_OFFER_CLOSING = "h";
+    public const string NGX_UNLISTED = "i";
+    public const string NGX_EX_BONUS = "j";
+    public const string NGX_EX_DEMERGE = "k";
+    public const string NGX_EX_LISTING = "l";
+    public const string NGX_EX_MERGE = "m";
+    public const string NGX_EX_RIGHT_OF_CONVERSION = "n";
+    public const string NGX_EX_SPLIT = "o";
+    public const string NGX_EX_DELISTING = "p";
     public const string EXDIVIDEND = "A";
     public const string EXDISTRIBUTION = "B";
     public const string EXRIGHTS = "C";
@@ -5611,6 +5647,47 @@ public sealed class TradingSessionID : StringField
     public const string AFTERNOON = "4";
     public const string EVENING = "5";
     public const string AFTER_HOURS = "6";
+    public const string Continuous = "Continuous";
+    public const string STARTLTECP = "STARTLTECP";
+    public const string NSE_PREOPEN = "NSE_PREOPEN";
+    public const string PREOPEN_IO = "PREOPEN_IO";
+    public const string STARTOFDAY = "STARTOFDAY";
+    public const string NSE_PO_SESS = "NSE_PO_SESS";
+    public const string NSE_PREODBT = "NSE_PREODBT";
+    public const string NASD_PO_SESS = "NASD_PO_SESS";
+    public const string NASD_PREOPEN = "NASD_PREOPEN";
+    public const string NSE_PREOADJ = "NSE_PREOADJ";
+    public const string NSE_PREOADJD = "NSE_PREOADJD";
+    public const string NASD_BULK = "NASD_BULK";
+    public const string OPEN_IO = "OPEN_IO";
+    public const string NSE_DRPOPEN = "NSE_DRPOPEN";
+    public const string NSE_DRTRDING = "NSE_DRTRDING";
+    public const string NSE_DRPCLS = "NSE_DRPCLS";
+    public const string NSE_PA_SESS = "NSE_PA_SESS";
+    public const string NSE_IO_TRAD = "NSE_IO_TRAD";
+    public const string NSE_TRADING = "NSE_TRADING";
+    public const string NSE_TRDDBT = "NSE_TRDDBT";
+    public const string NSE_MM_STRT = "NSE_MM_STRT";
+    public const string NASD_TRADING = "NASD_TRADING";
+    public const string NASD_TR_SESS = "NASD_TR_SESS";
+    public const string NSE_TR_SESS = "NSE_TR_SESS";
+    public const string START_INDEX = "START_INDEX";
+    public const string PRECLOSE_IO = "PRECLOSE_IO";
+    public const string NSE_PRECLOSE = "NSE_PRECLOSE";
+    public const string NSE_PRECLSED = "NSE_PRECLSED";
+    public const string NSE_PCA_SESS = "NSE_PCA_SESS";
+    public const string NSE_PC_SESS = "NSE_PC_SESS";
+    public const string NSE_PRCL_ADD = "NSE_PRCL_ADD";
+    public const string NSE_PRCL_ADJ = "NSE_PRCL_ADJ";
+    public const string NSE_CLS_MCH = "NSE_CLS_MCH";
+    public const string NSE_MM_STP = "NSE_MM_STP";
+    public const string CLOSE_INDEX = "CLOSE_INDEX";
+    public const string CLOSE_IO = "CLOSE_IO";
+    public const string NASD_CLOSE = "NASD_CLOSE";
+    public const string NSE_CLOSE = "NSE_CLOSE";
+    public const string ENDOFDAY = "ENDOFDAY";
+    public const string EOD_SESS = "EOD_SESS";
+    public const string STOPLTECP = "STOPLTECP";
 }
 
 
@@ -5686,6 +5763,9 @@ public sealed class TradSesStatus : IntField
     public const int PRE_OPEN = 4;
     public const int PRE_CLOSE = 5;
     public const int REQUEST_REJECTED = 6;
+    public const int NGX_PENDING = 100;
+    public const int NGX_TRIGGERED = 101;
+    public const int NGX_DELETED = 102;
     public const int PREOPEN = 4;
     public const int PRECLOSE = 5;
 }
@@ -7491,6 +7571,7 @@ public sealed class SecurityIDSource : StringField
     public const string LETTER_OF_CREDIT = "L";
     public const string ISDA_FPML_PRODUCT_URL = "K";
     public const string MARKETPLACE_ASSIGNED_IDENTIFIER = "M";
+    public const string NGX_EXCHANGE_SYMBOL = "99";
     public const string CLEARING_HOUSE_CLEARING_ORGANIZATION = "H";
     public const string OPTIONS_PRICE_REPORTING_AUTHORITY = "J";
 }
@@ -7507,6 +7588,13 @@ public sealed class IOIQty : StringField
         : base(Tags.IOIQty) {}
     public IOIQty(string val)
         : base(Tags.IOIQty, val) {}
+
+    // Field Enumerations
+    public const string VAL_1000000000 = "0";
+    public const string SMALL = "S";
+    public const string MEDIUM = "M";
+    public const string LARGE = "L";
+    public const string UNDISCLOSED_QUANTITY = "U";
 }
 
 
@@ -7947,6 +8035,11 @@ public sealed class YieldType : StringField
     public const string TRUE_YIELD = "TRUE";
     public const string YIELD_VALUE_OF_1_32 = "VALUE1_32";
     public const string YIELD_TO_WORST = "WORST";
+    public const string NGX_HIGH_YIELD = "OpenAvg";
+    public const string NGX_LOW_YIELD = "Low";
+    public const string NGX_LAST_YIELD = "Last";
+    public const string NGX_CLOSE_YIELD = "Close";
+    public const string NGX_WAVG_YIELD = "WAvg";
     public const string YIELD_TO_AVERAGE_MATURITY = "AVGMATURITY";
     public const string GOVERNMENT_EQUIVALENT_YIELD = "GOVTEQUIV";
     public const string YIELD_TO_AVERAGE_LIFE = "AVGLIFE";
@@ -10438,6 +10531,7 @@ public sealed class SecurityRequestResult : IntField
     public const int NOT_AUTHORIZED_TO_RETRIEVE_INSTRUMENT_DATA = 3;
     public const int INSTRUMENT_DATA_TEMPORARILY_UNAVAILABLE = 4;
     public const int REQUEST_FOR_INSTRUMENT_DATA_NOT_SUPPORTED = 5;
+    public const int NGX_INVALID_MARKETID = 100;
 }
 
 
@@ -22831,6 +22925,11 @@ public sealed class ListUpdateAction : CharField
         : base(Tags.ListUpdateAction) {}
     public ListUpdateAction(char val)
         : base(Tags.ListUpdateAction, val) {}
+
+    // Field Enumerations
+    public const char NGX_ADD = 'A';
+    public const char NGX_DELETE = 'D';
+    public const char NGX_MODIFY = 'M';
 }
 
 
@@ -22873,6 +22972,11 @@ public sealed class TradSesUpdateAction : CharField
         : base(Tags.TradSesUpdateAction) {}
     public TradSesUpdateAction(char val)
         : base(Tags.TradSesUpdateAction, val) {}
+
+    // Field Enumerations
+    public const char NGX_ADD = 'A';
+    public const char NGX_DELETE = 'D';
+    public const char NGX_MODIFY = 'M';
 }
 
 
@@ -23547,6 +23651,7 @@ public sealed class MassActionType : IntField
     public const int SUSPEND_ORDERS = 1;
     public const int RELEASE_ORDERS_FROM_SUSPENSION = 2;
     public const int CANCEL_ORDERS = 3;
+    public const int NGX_ORDER_STATUS = 100;
 }
 
 
