@@ -3899,6 +3899,10 @@
 			</group>
 		</component>
 		<component name='UnderlyingInstrument'>
+			<!--Custom Start-->
+			<field name='UnderlyingSymbol' required='N' />
+			<field name='UnderlyingSymbolSfx' required='N' />
+			<!--Custom Start-->
 			<field name='UnderlyingSecurityID' required='N' />
 			<field name='UnderlyingSecurityIDSource' required='N' />
 			<component name='UndSecAltIDGrp' required='N' />
@@ -5437,6 +5441,8 @@
 			<value enum='L' description='LETTER_OF_CREDIT' />
 			<value enum='K' description='ISDA_FPML_PRODUCT_URL' />
 			<value enum='M' description='MARKETPLACE_ASSIGNED_IDENTIFIER' />
+
+			<!--Custom-->
 			<value enum='99' description='EXCHANGE_SYMBOL_NSE' />
 		</field>
 		<field number='23' name='IOIID' type='STRING' />
@@ -5604,6 +5610,8 @@
 			<value enum='D' description='ACCEPTED_FOR_BIDDING' />
 			<value enum='E' description='PENDING_REPLACE' />
 			<value enum='5' description='REPLACED' />
+
+			<!--Custom-->
 			<value enum='U' description='ORDER_UNPLACED' />
 			<value enum='X' description='ORDER_INACTIVE' />
 			<value enum='Z' description='PRIVATE_ORDER' />
@@ -6484,6 +6492,7 @@
 			<value enum='X' description='CASH_RATE' />
 
 			<!--Custom-->
+			<value enum='C' description='NSE_OPEN_INTEREST' />
 			<value enum='a' description='NSE_STATISTICS' />
 			<value enum='j' description='NSE_NO_TRADES_EXIST' />
 			<value enum='n' description='NSE_TOTAL_TRADES' />
@@ -6897,14 +6906,16 @@
 			<value enum='3' description='CORRECTION' />
 		</field>
 		<field number='335' name='TradSesReqID' type='STRING' />
-		<field number='336' name='TradingSessionID' type='STRING' />
-		<!-- <field number='336' name='TradingSessionID' type='STRING'>
+		<!-- <field number='336' name='TradingSessionID' type='STRING' /> -->
+		<field number='336' name='TradingSessionID' type='STRING'>
 			<value enum='1' description='DAY' />
 			<value enum='2' description='HALFDAY' />
 			<value enum='3' description='MORNING' />
 			<value enum='4' description='AFTERNOON' />
 			<value enum='5' description='EVENING' />
 			<value enum='6' description='AFTER_HOURS' />
+
+			<!--Custom-->
 			<value enum='Continuous' description='Continuous' />
 			<value enum='STARTLTECP' description='STARTLTECP' />
 			<value enum='NSE_PREOPEN' description='NSE_PREOPEN' />
@@ -6938,7 +6949,7 @@
 			<value enum='ENDOFDAY' description='ENDOFDAY' />
 			<value enum='EOD_SESS' description='EOD_SESS' />
 			<value enum='STOPLTECP' description='STOPLTECP' />
-		</field> -->
+		</field>
 		<field number='337' name='ContraTrader' type='STRING' />
 		<field number='338' name='TradSesMethod' type='INT'>
 			<value enum='1' description='ELECTRONIC' />
