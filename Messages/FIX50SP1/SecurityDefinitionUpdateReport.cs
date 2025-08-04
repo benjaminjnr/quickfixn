@@ -14,6 +14,38 @@ public class SecurityDefinitionUpdateReport : Message
         Header.SetField(new MsgType("BP"));
     }
 
+    public AccruedInterestRate AccruedInterestRate
+    {
+        get
+        {
+            AccruedInterestRate val = new();
+            GetField(val);
+            return val;
+        }
+        set  => SetField(value);
+    }
+
+    public void Set(AccruedInterestRate val) { AccruedInterestRate = val; }
+    public AccruedInterestRate Get(AccruedInterestRate val) { GetField(val); return val; }
+    public bool IsSet(AccruedInterestRate val) { return IsSetAccruedInterestRate(); }
+    public bool IsSetAccruedInterestRate() { return IsSetField(Tags.AccruedInterestRate); }
+
+    public AccruedInterestAmt AccruedInterestAmt
+    {
+        get
+        {
+            AccruedInterestAmt val = new();
+            GetField(val);
+            return val;
+        }
+        set  => SetField(value);
+    }
+
+    public void Set(AccruedInterestAmt val) { AccruedInterestAmt = val; }
+    public AccruedInterestAmt Get(AccruedInterestAmt val) { GetField(val); return val; }
+    public bool IsSet(AccruedInterestAmt val) { return IsSetAccruedInterestAmt(); }
+    public bool IsSetAccruedInterestAmt() { return IsSetField(Tags.AccruedInterestAmt); }
+
     public SecurityReportID SecurityReportID
     {
         get
