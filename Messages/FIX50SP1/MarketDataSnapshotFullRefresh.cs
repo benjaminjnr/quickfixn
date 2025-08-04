@@ -4044,10 +4044,10 @@ public class MarketDataSnapshotFullRefresh : Message
 
     public class NoMDEntriesGroup : Group
     {
-        public static int[] DefaultFieldOrder = [Tags.MDEntryType, Tags.MDEntryPx, Tags.Currency, Tags.MDEntrySize, Tags.MDEntryDate, Tags.MDEntryTime, Tags.TickDirection, Tags.MDMkt, Tags.TradingSessionID, Tags.TradingSessionSubID, Tags.QuoteCondition, Tags.TradeCondition, Tags.MDEntryOriginator, Tags.LocationID, Tags.DeskID, Tags.OpenCloseSettlFlag, Tags.TimeInForce, Tags.ExpireDate, Tags.ExpireTime, Tags.MinQty, Tags.ExecInst, Tags.SellerDays, Tags.OrderID, Tags.QuoteEntryID, Tags.MDEntryBuyer, Tags.MDEntrySeller, Tags.NumberOfOrders, Tags.MDEntryPositionNo, Tags.Scope, Tags.PriceDelta, Tags.Text, Tags.EncodedTextLen, Tags.EncodedText, Tags.MDPriceLevel, Tags.OrderCapacity, Tags.MDOriginType, Tags.HighPx, Tags.LowPx, Tags.TradeVolume, Tags.SettlType, Tags.SettlDate, Tags.MDQuoteType, Tags.RptSeq, Tags.DealingCapacity, Tags.MDEntrySpotRate, Tags.MDEntryForwardPoints, Tags.MDEntryID, Tags.NoPartyIDs, Tags.SecondaryOrderID, Tags.OrdType, Tags.PriceType, Tags.YieldType, Tags.Yield, Tags.YieldCalcDate, Tags.YieldRedemptionDate, Tags.YieldRedemptionPrice, Tags.YieldRedemptionPriceType, Tags.Spread, Tags.BenchmarkCurveCurrency, Tags.BenchmarkCurveName, Tags.BenchmarkCurvePoint, Tags.BenchmarkPrice, Tags.BenchmarkPriceType, Tags.BenchmarkSecurityID, Tags.BenchmarkSecurityIDSource, Tags.NoOfSecSizes, Tags.LotType, Tags.SecurityTradingStatus, Tags.HaltReasonChar, 0];
+        public static int[] DefaultFieldOrder = [Tags.MDEntryType, Tags.MDEntryPx, Tags.Currency, Tags.MDEntrySize, Tags.MDEntryDate, Tags.MDEntryTime, Tags.TickDirection, Tags.MDMkt, Tags.TradingSessionID, Tags.TradingSessionSubID, Tags.QuoteCondition, Tags.TradeCondition, Tags.MDEntryOriginator, Tags.LocationID, Tags.DeskID, Tags.OpenCloseSettlFlag, Tags.TimeInForce, Tags.ExpireDate, Tags.ExpireTime, Tags.MinQty, Tags.ExecInst, Tags.SellerDays, Tags.OrderID, Tags.QuoteEntryID, Tags.MDEntryBuyer, Tags.MDEntrySeller, Tags.NumberOfOrders, Tags.MDEntryPositionNo, Tags.Scope, Tags.PriceDelta, Tags.Text, Tags.EncodedTextLen, Tags.EncodedText, Tags.MDPriceLevel, Tags.OrderCapacity, Tags.MDOriginType, Tags.HighPx, Tags.LowPx, Tags.TradeVolume, Tags.SettlType, Tags.SettlDate, Tags.MDQuoteType, Tags.RptSeq, Tags.DealingCapacity, Tags.MDEntrySpotRate, Tags.MDEntryForwardPoints, Tags.MDEntryID, Tags.NoPartyIDs, Tags.SecondaryOrderID, Tags.OrdType, Tags.PriceType, Tags.YieldType, Tags.Yield, Tags.YieldCalcDate, Tags.YieldRedemptionDate, Tags.YieldRedemptionPrice, Tags.YieldRedemptionPriceType, Tags.Spread, Tags.BenchmarkCurveCurrency, Tags.BenchmarkCurveName, Tags.BenchmarkCurvePoint, Tags.BenchmarkPrice, Tags.BenchmarkPriceType, Tags.BenchmarkSecurityID, Tags.BenchmarkSecurityIDSource, Tags.NoOfSecSizes, Tags.LotType, Tags.SecurityTradingStatus, Tags.HaltReasonChar, Tags.LastPx, 0];
 
         [Obsolete("Use DefaultFieldOrder instead.  This will be removed in a future release.")]
-        public static int[] fieldOrder = {Tags.MDEntryType, Tags.MDEntryPx, Tags.Currency, Tags.MDEntrySize, Tags.MDEntryDate, Tags.MDEntryTime, Tags.TickDirection, Tags.MDMkt, Tags.TradingSessionID, Tags.TradingSessionSubID, Tags.QuoteCondition, Tags.TradeCondition, Tags.MDEntryOriginator, Tags.LocationID, Tags.DeskID, Tags.OpenCloseSettlFlag, Tags.TimeInForce, Tags.ExpireDate, Tags.ExpireTime, Tags.MinQty, Tags.ExecInst, Tags.SellerDays, Tags.OrderID, Tags.QuoteEntryID, Tags.MDEntryBuyer, Tags.MDEntrySeller, Tags.NumberOfOrders, Tags.MDEntryPositionNo, Tags.Scope, Tags.PriceDelta, Tags.Text, Tags.EncodedTextLen, Tags.EncodedText, Tags.MDPriceLevel, Tags.OrderCapacity, Tags.MDOriginType, Tags.HighPx, Tags.LowPx, Tags.TradeVolume, Tags.SettlType, Tags.SettlDate, Tags.MDQuoteType, Tags.RptSeq, Tags.DealingCapacity, Tags.MDEntrySpotRate, Tags.MDEntryForwardPoints, Tags.MDEntryID, Tags.NoPartyIDs, Tags.SecondaryOrderID, Tags.OrdType, Tags.PriceType, Tags.YieldType, Tags.Yield, Tags.YieldCalcDate, Tags.YieldRedemptionDate, Tags.YieldRedemptionPrice, Tags.YieldRedemptionPriceType, Tags.Spread, Tags.BenchmarkCurveCurrency, Tags.BenchmarkCurveName, Tags.BenchmarkCurvePoint, Tags.BenchmarkPrice, Tags.BenchmarkPriceType, Tags.BenchmarkSecurityID, Tags.BenchmarkSecurityIDSource, Tags.NoOfSecSizes, Tags.LotType, Tags.SecurityTradingStatus, Tags.HaltReasonChar, 0};
+        public static int[] fieldOrder = {Tags.MDEntryType, Tags.MDEntryPx, Tags.Currency, Tags.MDEntrySize, Tags.MDEntryDate, Tags.MDEntryTime, Tags.TickDirection, Tags.MDMkt, Tags.TradingSessionID, Tags.TradingSessionSubID, Tags.QuoteCondition, Tags.TradeCondition, Tags.MDEntryOriginator, Tags.LocationID, Tags.DeskID, Tags.OpenCloseSettlFlag, Tags.TimeInForce, Tags.ExpireDate, Tags.ExpireTime, Tags.MinQty, Tags.ExecInst, Tags.SellerDays, Tags.OrderID, Tags.QuoteEntryID, Tags.MDEntryBuyer, Tags.MDEntrySeller, Tags.NumberOfOrders, Tags.MDEntryPositionNo, Tags.Scope, Tags.PriceDelta, Tags.Text, Tags.EncodedTextLen, Tags.EncodedText, Tags.MDPriceLevel, Tags.OrderCapacity, Tags.MDOriginType, Tags.HighPx, Tags.LowPx, Tags.TradeVolume, Tags.SettlType, Tags.SettlDate, Tags.MDQuoteType, Tags.RptSeq, Tags.DealingCapacity, Tags.MDEntrySpotRate, Tags.MDEntryForwardPoints, Tags.MDEntryID, Tags.NoPartyIDs, Tags.SecondaryOrderID, Tags.OrdType, Tags.PriceType, Tags.YieldType, Tags.Yield, Tags.YieldCalcDate, Tags.YieldRedemptionDate, Tags.YieldRedemptionPrice, Tags.YieldRedemptionPriceType, Tags.Spread, Tags.BenchmarkCurveCurrency, Tags.BenchmarkCurveName, Tags.BenchmarkCurvePoint, Tags.BenchmarkPrice, Tags.BenchmarkPriceType, Tags.BenchmarkSecurityID, Tags.BenchmarkSecurityIDSource, Tags.NoOfSecSizes, Tags.LotType, Tags.SecurityTradingStatus, Tags.HaltReasonChar, Tags.LastPx, 0};
 
         public NoMDEntriesGroup()
           : base(Tags.NoMDEntries, Tags.MDEntryType, DefaultFieldOrder)
@@ -5164,6 +5164,22 @@ public class MarketDataSnapshotFullRefresh : Message
         public HaltReasonChar Get(HaltReasonChar val) { GetField(val); return val; }
         public bool IsSet(HaltReasonChar val) { return IsSetHaltReasonChar(); }
         public bool IsSetHaltReasonChar() { return IsSetField(Tags.HaltReasonChar); }
+
+        public LastPx LastPx
+        {
+            get
+            {
+                LastPx val = new();
+                GetField(val);
+                return val;
+            }
+            set  => SetField(value);
+        }
+
+        public void Set(LastPx val) { LastPx = val; }
+        public LastPx Get(LastPx val) { GetField(val); return val; }
+        public bool IsSet(LastPx val) { return IsSetLastPx(); }
+        public bool IsSetLastPx() { return IsSetField(Tags.LastPx); }
 
         public class NoPartyIDsGroup : Group
         {

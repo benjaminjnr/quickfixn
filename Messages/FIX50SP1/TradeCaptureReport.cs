@@ -23,6 +23,22 @@ public class TradeCaptureReport : Message
         LastPx = aLastPx;
     }
 
+    public MarketSegmentID MarketSegmentID
+    {
+        get
+        {
+            MarketSegmentID val = new();
+            GetField(val);
+            return val;
+        }
+        set  => SetField(value);
+    }
+
+    public void Set(MarketSegmentID val) { MarketSegmentID = val; }
+    public MarketSegmentID Get(MarketSegmentID val) { GetField(val); return val; }
+    public bool IsSet(MarketSegmentID val) { return IsSetMarketSegmentID(); }
+    public bool IsSetMarketSegmentID() { return IsSetField(Tags.MarketSegmentID); }
+
     public TradeReportID TradeReportID
     {
         get
